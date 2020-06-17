@@ -1,0 +1,153 @@
+.we-do__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 190px 212px 112px;
+}
+
+.we-do__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.we-do__heading {
+  max-width: 360px;
+}
+
+.we-do__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.we-do__item {
+  max-width: 380px;
+  margin-bottom: 100px;
+  padding: 0 48px 48px;
+  background: #FFFFFF;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+
+  &--business {
+    position: absolute;
+    left: calc(-100% - 100px);
+    top: calc(50% - 50px - 280px);
+  }
+}
+
+.we-do__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 236px;
+
+  &--home {
+    img {
+      transform: translateY(-37px);
+    }
+  }
+}
+
+.we-do__small-heading {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  font-family: $main-fonts;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: $dark-font-color;
+}
+
+.we-do__text {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  font-family: $main-fonts;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: $dark-font-color;
+  opacity: 0.6;
+}
+
+.we-do__more {
+  display: flex;
+  align-items: center;
+  font-family: $main-fonts;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #5A98D0;
+
+  &:hover .we-do__arrow-icon {
+    transform: translateX(10px);
+  }
+
+  &:active .we-do__arrow-icon {
+    transform: translateX(5px);
+  }
+}
+
+.we-do__arrow-icon {
+  margin-left: 24px;
+  fill: #5A98D0;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 1260px) {
+  .we-do__wrapper {
+    padding: 110px 90px 112px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .we-do__wrapper {
+    padding: 70px 45px 90px;
+  }
+
+  .we-do__item {
+    max-width: 310px;
+    margin-bottom: 40px;
+    padding: 0 20px 25px;
+
+    &--business {
+      left: calc(-100% - 40px);
+      top: calc(50% - 20px - 280px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .we-do__wrapper {
+    padding: 50px 15px 60px;
+  }
+
+  .we-do__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .we-do__heading {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .we-do__item {
+    max-width: 310px;
+    margin-bottom: 40px;
+    padding: 0 20px 25px;
+
+    &--business {
+      position: static;
+    }
+  }
+}

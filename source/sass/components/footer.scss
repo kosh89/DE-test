@@ -1,0 +1,149 @@
+.footer__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-right: 96px;
+  background-color: #5A98D0;
+}
+
+.footer__content {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 96px 190px 64px 212px;
+  background-color: #316099;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    top: 0;
+    left: 0;
+    right: 197px;
+    background-color: #ffffff;
+    opacity: 0.4;
+  }
+}
+
+.footer__item {
+  &--contacts {
+    margin-right: 99px;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  margin-bottom: 31px;
+}
+
+.footer__contacts {
+  max-width: 300px;
+}
+
+.footer__navigation {
+  margin-right: 70px;
+
+  .navigation__list {
+    flex-direction: column;
+  }
+
+  .navigation__item {
+    margin: 0 0 10px;
+  }
+
+  .navigation__link {
+    color: #ffffff;
+  }
+}
+
+.footer__copyright {
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  width: 100%;
+  font-family: $main-fonts;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 1260px) {
+  .footer__content {
+    padding: 96px 90px 64px 90px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__wrapper {
+    padding-right: 60px;
+  }
+
+  .footer__content {
+    padding: 75px 100px 64px 45px;
+  }
+
+  .footer__item {
+    &--contacts {
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer__content {
+    padding: 75px 60px 64px 45px;
+  }
+
+  .footer__navigation {
+    margin-right: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__content {
+    padding: 50px 15px 20px;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+      right: 0;
+    }
+  }
+
+  .footer__wrapper {
+    padding-right: 0;
+  }
+
+  .footer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+
+    &--contacts {
+      margin-right: 0;
+    }
+  }
+
+  .footer__logo {
+    margin-bottom: 25px;
+  }
+
+  .footer__navigation {
+    margin-right: 0;
+
+    .navigation__list {
+      align-items: center;
+    }
+
+    .navigation__heading {
+      margin-bottom: 25px;
+    }
+  }
+
+  .footer__copyright {
+    margin: 0;
+  }
+}

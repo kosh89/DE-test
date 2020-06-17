@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  font-family: $main-fonts;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #5A98D0;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}

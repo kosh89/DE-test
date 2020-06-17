@@ -1,0 +1,27 @@
+@keyframes appearing {
+  0% {
+    transform: rotate(180deg) translateY(-1000px);
+  }
+
+  70% {
+    transform: translateY(-30px) rotate(0deg);
+  }
+
+  90% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes appearing2 {
+  0% {
+    transform: translateX(-1000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

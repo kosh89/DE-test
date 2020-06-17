@@ -1,0 +1,93 @@
+.closed {
+    display: none;
+}
+
+.modal__wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  animation: appearing2;
+  animation-duration: 0.5s;
+}
+
+.modal__content,
+.modal__data-sending {
+  position: relative;
+  max-width: 540px;
+  width: 540px;
+  padding: 56px;
+  background: #ffffff;
+  box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  animation: appearing;
+  animation-duration: 0.4s;
+}
+
+.modal__close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.modal__heading {
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+  font-family: $main-fonts;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: $dark-font-color;
+  text-transform: uppercase;
+}
+
+.modal__status,
+.modal__message {
+  font-family: $main-fonts;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: $dark-font-color;
+  text-transform: uppercase;
+}
+
+.modal__message {
+  font-weight: 400;
+  text-transform: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .modal__content {
+    max-width: 350px;
+    width: 350px;
+    padding: 20px;
+  }
+
+  .modal__heading {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal__wrapper {
+    padding: 15px;
+  }
+}

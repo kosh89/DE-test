@@ -1,0 +1,44 @@
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__item span,
+.contacts__text,
+.contacts__link {
+  margin: 0;
+  font-family: $main-fonts;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts__item {
+  display: flex;
+  margin-bottom: 18px;
+
+  span {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 3px 0;
+  }
+}
+
+.contacts__link {
+  padding: 3px;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
