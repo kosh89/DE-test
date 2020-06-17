@@ -2,8 +2,8 @@
   max-width: 1366px;
   margin: 0 auto;
   padding: 96px 212px 125px;
-  background-color: #5A98D0;
-  border-radius: 200px 0px 0px 0px;
+  background-color: #5a98d0;
+  border-radius: 200px 0 0 0;
 }
 
 .clients__content {
@@ -35,7 +35,6 @@
 }
 
 .clients__list {
-  margin: 0;
   margin: 0 -1px -1px 0;
   padding: 0;
   list-style: none;
@@ -74,20 +73,10 @@
       color: #ffffff;
       text-decoration: none;
       transition: 0.2s;
-
-      &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: #1F3F68;
-        opacity: 0.2;
-      }
+      background-color: rgba(31, 63, 104, 0.2);
 
       &:hover {
-        font-size: 24px;
+        background-color: rgba(31, 63, 104, 0.4);
       }
     }
   }

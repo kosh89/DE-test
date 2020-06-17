@@ -12,7 +12,7 @@
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.04em;
-  color: $dark-font-color;
+  color: $dark-font;
   opacity: 0.8;
 }
 
@@ -28,7 +28,7 @@
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.04em;
-  color: $dark-font-color;
+  color: $dark-font;
   outline: none;
 
   &::placeholder {
@@ -37,7 +37,7 @@
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.04em;
-    color: $dark-font-color;
+    color: $dark-font;
     opacity: 0.2;
   }
 

@@ -13,11 +13,11 @@
   letter-spacing: 0.04em;
   text-decoration: none;
   color: #ffffff;
-  background-color: #5A98D0;
+  background-color: rgb(90, 153, 208);
   transition: 0.2s;
 
   &:hover {
-    transform: scale(0.9);
+    background-color: rgba(90, 153, 208, 0.7);
   }
 
   &:active {

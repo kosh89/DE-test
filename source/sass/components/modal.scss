@@ -1,5 +1,5 @@
 .closed {
-    display: none;
+  display: none;
 }
 
 .modal__wrapper {
@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
-  animation: appearing2;
+  animation: appearing;
   animation-duration: 0.5s;
 }
 
@@ -54,7 +54,7 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.05em;
-  color: $dark-font-color;
+  color: $dark-font;
   text-transform: uppercase;
 }
 
@@ -65,7 +65,7 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.05em;
-  color: $dark-font-color;
+  color: $dark-font;
   text-transform: uppercase;
 }
 

@@ -14,7 +14,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    background-image: linear-gradient(0deg, #98c3e8 8.84%, rgba(152, 195, 232, 0) 31.12%);
     opacity: 0.2;
     z-index: -1;
   }
@@ -35,7 +35,7 @@
   font-size: 64px;
   line-height: 74px;
   letter-spacing: 0.04em;
-  color: $dark-font-color;
+  color: $dark-font;
 }
 
 .promo__text {
@@ -48,7 +48,7 @@
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.05em;
-  color: $dark-font-color;
+  color: $dark-font;
   opacity: 0.6;
 }
 

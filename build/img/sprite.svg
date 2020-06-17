@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-	<symbol id="logo" width="48" height="32" viewBox="0 0 48 32" fill="none">
-		<circle cx="16" cy="16" r="16" fill="#316099"/>
-		<circle cx="32" cy="16" r="15" fill="white" stroke="#316099" stroke-width="2"/>
-		<path d="M39.3 22L34.38 8H30.96L26.06 22H29.04L29.88 19.48H35.46L36.3 22H39.3ZM32.68 11.18L34.6 16.9H30.76L32.68 11.18Z" fill="#316099"/>
-	</symbol>
-	<symbol id="arrow" width="16" height="16" viewBox="0 0 16 16">
-		<path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"/>
-	</symbol>
-	<symbol id="cross" width="24" height="24" viewBox="0 0 24 24">
-		<g>
-			<rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
-		</g>
-		<g>
-			<path id="svg_1" fill="#ff5353" d="m12,2a10,10 0 1 0 10,10a10,10 0 0 0 -10,-10zm3.21,11.79a1,1 0 0 1 0,1.42a1,1 0 0 1 -1.42,0l-1.79,-1.8l-1.79,1.8a1,1 0 0 1 -1.42,0a1,1 0 0 1 0,-1.42l1.8,-1.79l-1.8,-1.79a1,1 0 0 1 1.42,-1.42l1.79,1.8l1.79,-1.8a1,1 0 0 1 1.42,1.42l-1.8,1.79l1.8,1.79z"/>
-		</g>
+<symbol id="logo" width="48" height="32" viewBox="0 0 48 32" fill="none">
+<circle cx="16" cy="16" r="16" fill="#316099"/>
+<circle cx="32" cy="16" r="15" fill="white" stroke="#316099" stroke-width="2"/>
+<path d="M39.3 22L34.38 8H30.96L26.06 22H29.04L29.88 19.48H35.46L36.3 22H39.3ZM32.68 11.18L34.6 16.9H30.76L32.68 11.18Z" fill="#316099"/>
+</symbol>
+<symbol id="arrow" width="16" height="16" viewBox="0 0 16 16">
+<path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"/>
+</symbol>
+<symbol id="cross" width="24" height="24" viewBox="0 0 24 24">
+<g>
+<rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+</g>
+<g>
+<path id="svg_1" fill="#ff5353" d="m12,2a10,10 0 1 0 10,10a10,10 0 0 0 -10,-10zm3.21,11.79a1,1 0 0 1 0,1.42a1,1 0 0 1 -1.42,0l-1.79,-1.8l-1.79,1.8a1,1 0 0 1 -1.42,0a1,1 0 0 1 0,-1.42l1.8,-1.79l-1.8,-1.79a1,1 0 0 1 1.42,-1.42l1.79,1.8l1.79,-1.8a1,1 0 0 1 1.42,1.42l-1.8,1.79l1.8,1.79z"/>
+</g>
 </symbol>
 </svg>
