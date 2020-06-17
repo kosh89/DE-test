@@ -1,23 +1,23 @@
 (() => {
-  const API_URL = `https://echo.htmlacademy.ru`;
-  const POST_METHOD = `POST`;
+  const API_URL = 'https://echo.htmlacademy.ru';
+  const POST_METHOD = 'POST';
   const HTTP_REQUEST_OK = 200;
 
   const request = (url, method, data, onSuccess, onError) => {
     const xhr = new XMLHttpRequest();
-    xhr.responseType = `json`;
+    xhr.responseType = 'json';
 
-    xhr.addEventListener(`load`, () => {
+    xhr.addEventListener('load', () => {
       if (xhr.status === HTTP_REQUEST_OK) {
         onSuccess(xhr.response);
       } else {
-        onError(`Response Status: ` + xhr.status + ` ` + xhr.statusText);
+        onError('Response Status: ' + xhr.status + ' ' + xhr.statusText);
       }
     });
 
-    xhr.addEventListener(`error`, () => {
+    xhr.addEventListener('error', () => {
       if (xhr.statusText !== HTTP_REQUEST_OK) {
-        onError(`Connection failed`);
+        onError('Connection failed');
       }
     });
 
@@ -31,7 +31,7 @@
     },
 
     onServerRequestError: (errorMessage) => {
-      window.showSuccessMessage(errorMessage);
+      window.showSendingStatus(errorMessage);
     }
   };
 })();
