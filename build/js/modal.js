@@ -12,6 +12,7 @@
   const modalElement = body.querySelector('.modal');
   const modalWrapperElement = modalElement.querySelector('.modal__wrapper');
   const modalContentElement = modalElement.querySelector('.modal__content');
+  const modalCloseButtonElement = modalElement.querySelector('.modal__close');
   const modalDataSendingElement = body.querySelector('.modal__data-sending');
   const modalStatusElement = modalDataSendingElement.querySelector('.modal__status');
   const modalMessageElement = modalDataSendingElement.querySelector('.modal__message');
@@ -99,6 +100,7 @@
 
   workButtonElement.addEventListener('click', onWorkButtonClickHandler);
   modalWrapperElement.addEventListener('mouseup', onModalWrapperClickHandler);
+  modalCloseButtonElement.addEventListener('click', closeModal);
   formElement.addEventListener('submit', onFormSubmitHandler);
 
   formInputElements.forEach((input)=>{
