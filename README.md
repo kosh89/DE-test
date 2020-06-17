@@ -1,4 +1,4 @@
-[## Техническое задание](https://docs.google.com/document/d/1bL61XvvCRcOYmYYDJNAH64Pc-Gef3aErAqWuz3Iidgs/edit)
+## [Техническое задание](https://docs.google.com/document/d/1bL61XvvCRcOYmYYDJNAH64Pc-Gef3aErAqWuz3Iidgs/edit)
 
 ## Основные команды для работы
 * Установка - `npm i`
