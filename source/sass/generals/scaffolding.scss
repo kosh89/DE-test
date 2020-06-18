@@ -25,3 +25,15 @@ img {
 .stop-scroll {
   overflow: hidden;
 }
+
+@media screen and (min-width: 769px) {
+  .stop-scroll {
+    &--navigation {
+      overflow: auto;
+    }
+
+    &--modal {
+      overflow: hidden;
+    }
+  }
+}

@@ -1,22 +1,19 @@
 (() => {
   const CLOSED_MODAL_CLASS = 'closed';
-  const STOP_SCROLL_CLASS = 'stop-scroll';
-  const ESC_KEY = 'Escape';
   const VALID_INPUT_COLOR = 'green';
   const INVALID_INPUT_COLOR = 'red';
 
-  const body = document.querySelector('body');
-  const workButtonElement = body.querySelector('.work__button');
+  const workButtonElement = document.querySelector('.work__button');
 
-  const modalElement = body.querySelector('.modal');
+  const modalElement = document.querySelector('.modal');
   const modalWrapperElement = modalElement.querySelector('.modal__wrapper');
   const modalContentElement = modalElement.querySelector('.modal__content');
   const modalCloseButtonElement = modalElement.querySelector('.modal__close');
-  const modalDataSendingElement = body.querySelector('.modal__data-sending');
+  const modalDataSendingElement = modalElement.querySelector('.modal__data-sending');
   const modalStatusElement = modalDataSendingElement.querySelector('.modal__status');
   const modalMessageElement = modalDataSendingElement.querySelector('.modal__message');
 
-  const formElement = body.querySelector('.form');
+  const formElement = document.querySelector('.form');
   const formInputElements = formElement.querySelectorAll('.form__input');
   const nameInputElement = formElement.querySelector('.form__input--name');
   const emailInputElement = formElement.querySelector('.form__input--email');
@@ -39,8 +36,8 @@
 
   const showModal = () => {
     modalElement.classList.remove(CLOSED_MODAL_CLASS);
-    body.classList.add(STOP_SCROLL_CLASS);
-    document.addEventListener('keydown', onModalEscPress);
+    window.utils.body.classList.add(window.utils.STOP_SCROLL_CLASS, window.utils.STOP_SCROLL_CLASS + '--modal');
+    document.addEventListener('keydown', onModalEscPressHandler);
   };
 
   const closeModal = () => {
@@ -48,12 +45,12 @@
     modalElement.classList.add(CLOSED_MODAL_CLASS);
     modalContentElement.classList.remove(CLOSED_MODAL_CLASS);
     modalDataSendingElement.classList.add(CLOSED_MODAL_CLASS);
-    body.classList.remove(STOP_SCROLL_CLASS);
-    document.removeEventListener('keydown', onModalEscPress);
+    window.utils.body.classList.remove(window.utils.STOP_SCROLL_CLASS, window.utils.STOP_SCROLL_CLASS + '--modal');
+    document.removeEventListener('keydown', onModalEscPressHandler);
   };
 
-  const onModalEscPress = (event) => {
-    if (event.key === ESC_KEY) {
+  const onModalEscPressHandler = (event) => {
+    if (event.key === window.utils.ESC_KEY) {
       closeModal();
     }
   };
