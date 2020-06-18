@@ -87,6 +87,12 @@
     padding: 48px 30px 20px;
   }
 
+  .header__burger.active {
+    position: fixed;
+    top: 58px;
+    right: 30px;
+  }
+
   .header__navigation {
     position: fixed;
     display: flex;
